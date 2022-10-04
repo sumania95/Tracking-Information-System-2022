@@ -24,17 +24,17 @@ Partial Class Main
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,13 +58,119 @@ Partial Class Main
         Me.Panel1.Size = New System.Drawing.Size(335, 746)
         Me.Panel1.TabIndex = 0
         '
-        'Panel2
+        'Button8
         '
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(335, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(685, 746)
-        Me.Panel2.TabIndex = 1
+        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.Color.White
+        Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
+        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button8.Location = New System.Drawing.Point(0, 541)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(335, 55)
+        Me.Button8.TabIndex = 26
+        Me.Button8.Text = "   SUMMARY REPORTS"
+        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.White
+        Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
+        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button7.Location = New System.Drawing.Point(0, 486)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(335, 55)
+        Me.Button7.TabIndex = 25
+        Me.Button7.Text = "   STOCK OUT"
+        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button6.Location = New System.Drawing.Point(0, 431)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(335, 55)
+        Me.Button6.TabIndex = 24
+        Me.Button6.Text = "   STOCK IN"
+        Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
+        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button5.Location = New System.Drawing.Point(0, 376)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(335, 55)
+        Me.Button5.TabIndex = 23
+        Me.Button5.Text = "   INVENTORY"
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.Location = New System.Drawing.Point(0, 321)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(335, 55)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "   UNIT"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(0, 266)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(335, 55)
+        Me.Button2.TabIndex = 21
+        Me.Button2.Text = "   CUSTOMER"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -125,119 +231,13 @@ Partial Class Main
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
-        'Button2
+        'Panel2
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(0, 266)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(335, 55)
-        Me.Button2.TabIndex = 21
-        Me.Button2.Text = "   CUSTOMER"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(0, 321)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(335, 55)
-        Me.Button3.TabIndex = 22
-        Me.Button3.Text = "   UNIT"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.Location = New System.Drawing.Point(0, 376)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(335, 55)
-        Me.Button5.TabIndex = 23
-        Me.Button5.Text = "   INVENTORY"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(0, 431)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(335, 55)
-        Me.Button6.TabIndex = 24
-        Me.Button6.Text = "   STOCK IN"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(0, 486)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(335, 55)
-        Me.Button7.TabIndex = 25
-        Me.Button7.Text = "   STOCK OUT"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.White
-        Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
-        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.Location = New System.Drawing.Point(0, 541)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(335, 55)
-        Me.Button8.TabIndex = 26
-        Me.Button8.Text = "   REPORTS"
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(335, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(685, 746)
+        Me.Panel2.TabIndex = 1
         '
         'Main
         '
