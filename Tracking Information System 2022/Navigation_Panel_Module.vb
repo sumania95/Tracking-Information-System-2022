@@ -23,6 +23,8 @@ Module Navigation_Panel_Module
         'Main.Button9.ForeColor = Color.White
         'Main.Button10.ForeColor = Color.White
         'Main.Button11.ForeColor = Color.White
+        CustomerFormView.Hide()
+        DashboardFormView.Hide()
     End Sub
 
     Public Sub Login_View()
@@ -46,6 +48,7 @@ Module Navigation_Panel_Module
     End Sub
 
     Public Sub Dashboard_View()
+
         Button_Color_Reset()
         Main.Button1.ForeColor = background_color_active
         With DashboardFormView
@@ -64,9 +67,11 @@ Module Navigation_Panel_Module
             .TopLevel = False
             Main.Panel2.Controls.Add(CustomerFormView)
             .BringToFront()
-            thread = New System.Threading.Thread(AddressOf .loadrecord)
-            thread.Start()
             .Show()
+            .MetroTextBox1.Text = String.Empty
+            .loadrecord()
+            .DataGridView1.Refresh()
+
         End With
     End Sub
 
