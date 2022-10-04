@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>Tracking_Information_System_2022.My.MyApplication</StartupObject>
     <RootNamespace>Tracking_Information_System_2022</RootNamespace>
-    <AssemblyName>Management &amp; Inventory System 2022</AssemblyName>
+    <AssemblyName>Tracking Information System 2022</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -28,11 +28,10 @@
     <UpdateUrl>https://github.com/sumania95/Tracking-Information-System-2022/raw/master/Tracking%2520Information%2520System%25202022/published/</UpdateUrl>
     <ProductName>Tracking Information System 2022</ProductName>
     <PublisherName>AMC Software Solution</PublisherName>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>19</ApplicationRevision>
+    <ApplicationRevision>22</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
+    <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -44,7 +43,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Management &amp; Inventory System 2022.xml</DocumentationFile>
+    <DocumentationFile>Tracking Information System 2022.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -54,7 +53,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Management &amp; Inventory System 2022.xml</DocumentationFile>
+    <DocumentationFile>Tracking Information System 2022.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
