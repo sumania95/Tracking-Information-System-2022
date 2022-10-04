@@ -39,4 +39,14 @@
         End Try
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        With CustomerFormCreate
+            .TextBox1.Clear()
+            .TextBox2.Clear()
+            .TextBox3.Clear()
+            .TextBox1.Focus()
+            .ShowDialog()
+        End With
+    End Sub
 End Class
