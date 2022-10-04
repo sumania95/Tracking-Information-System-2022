@@ -70,6 +70,8 @@
                 .StartPosition = FormStartPosition.CenterScreen
                 .Text = "CUSTOMER SUMMARY INFORMATION"
                 .Customer_AutoFill(uid_customer)
+                .TabControl1.SelectedIndex = 0
+
                 .ShowDialog()
             End With
         End If

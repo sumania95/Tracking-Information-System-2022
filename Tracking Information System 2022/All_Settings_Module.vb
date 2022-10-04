@@ -4,6 +4,7 @@
     Public uid As Integer
     Public uid_customer As Integer
     Public uid_user As Integer
+    Public uid_brand As Integer
 
     Function UppercaseFirstLetter(ByVal val As String) As String
         ' Test for nothing or empty.

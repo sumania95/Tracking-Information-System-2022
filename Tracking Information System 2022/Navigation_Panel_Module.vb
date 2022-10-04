@@ -105,6 +105,7 @@ Module Navigation_Panel_Module
             .TopLevel = False
             CustomerFormDetailView.TabPage2.Controls.Add(CustomerFormDetailView_Tab2)
             .BringToFront()
+            .loadrecord()
             .Show()
         End With
     End Sub

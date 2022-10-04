@@ -270,9 +270,9 @@ Partial Class CustomerFormDetailView_Tab2
         '
         Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.SlateGray
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SlateGray
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
         Me.Column3.DefaultCellStyle = DataGridViewCellStyle3
         Me.Column3.FlatStyle = System.Windows.Forms.FlatStyle.Flat

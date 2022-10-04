@@ -1,6 +1,7 @@
 ﻿Public Class BrandFormCreate
     Public Sub Brand_AutoFill(uid As Integer)
         Try
+
             Button2.Text = "UPDATE"
             cn.Open()
             cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM brand WHERE id = @id;", cn)
@@ -21,7 +22,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If Button2.Text = "SAVE" Then
             If TextBox1.Text = String.Empty Then
-                MsgBox("Warning : Name field required!", vbCritical, title_app)
+                MsgBox("Warning : Brand field required!", vbCritical, title_app)
                 Return
             End If
             If (MsgBox("Are you sure you want to save this record?", vbYesNo + vbQuestion, title_app) = vbYes) Then
