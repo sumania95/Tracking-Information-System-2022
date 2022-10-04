@@ -38,7 +38,7 @@
                 i += 1
                 Dim ddate As Date
                 ddate = dr.Item("date_created").ToString
-                DataGridView1.Rows.Add(i, dr.Item("id").ToString, dr.Item("brand").ToString.ToUpper, dr.Item("model").ToString.ToUpper, dr.Item("serial_no").ToString.ToUpper, ddate.ToString("MMMM dd, yyyy"), dr.Item("location").ToString.ToUpper, dr.Item("username").ToString.ToUpper, "UPDATE", "PRINT")
+                DataGridView1.Rows.Add(i, dr.Item("id").ToString, dr.Item("brand").ToString.ToUpper, dr.Item("model").ToString.ToUpper, dr.Item("serial_no").ToString.ToUpper, ddate.ToString("MMMM dd, yyyy").ToUpper, dr.Item("location").ToString.ToUpper, dr.Item("username").ToString.ToUpper, "UPDATE", "PRINT")
             End While
             dr.Close()
             cn.Close()
