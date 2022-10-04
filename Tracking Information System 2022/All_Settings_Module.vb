@@ -1,4 +1,5 @@
-﻿Module Module_Base
+﻿Module All_Settings_Module
+    Public pagination_counter As Integer = 0
     Public title_app = "TRACKING INFORMATION SYSTEM 2022"
 
     Function UppercaseFirstLetter(ByVal val As String) As String

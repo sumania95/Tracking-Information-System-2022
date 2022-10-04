@@ -8,6 +8,7 @@ Public Class Base
         Me.Bounds = Screen.GetWorkingArea(Me)
         Login_View()
         connection()
+        System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
 
         If ApplicationDeployment.IsNetworkDeployed Then
             ToolStripLabel2.Text = ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString
