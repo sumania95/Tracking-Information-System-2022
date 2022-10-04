@@ -79,7 +79,22 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>inventory-management.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\Documents\POS Lite Version\POS Lite Version\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\..\Documents\POS Lite Version\POS Lite Version\bin\Debug\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\..\..\Documents\POS Lite Version\POS Lite Version\bin\Debug\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Documents\POS Lite Version\POS Lite Version\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -103,6 +118,13 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="authentication\LoginFormView.Designer.vb">
+      <DependentUpon>LoginFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="authentication\LoginFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="authentication\Module_LoginFormView.vb" />
     <Compile Include="Base.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +132,23 @@
       <DependentUpon>Base.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="dashboard\DashboardFormView.Designer.vb">
+      <DependentUpon>DashboardFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\DashboardFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard\Dashboard_Module.vb" />
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Module.vb" />
+    <Compile Include="Module_Base.vb" />
+    <Compile Include="Module_Connection.vb" />
+    <Compile Include="Module_Internet_Connectivity.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -128,8 +167,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="authentication\LoginFormView.resx">
+      <DependentUpon>LoginFormView.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Base.resx">
       <DependentUpon>Base.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard\DashboardFormView.resx">
+      <DependentUpon>DashboardFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -150,6 +198,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="inventory-management.ico" />
     <Content Include="published\.gitattributes" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +207,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app_tracking\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
