@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Tracking Information System 2022.exe" version="1.0.0.3" publicKeyToken="17660e3c827f293b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Tracking Information System 2022" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Tracking Information System 2022.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tracking Information System 2022.exe" size="16824">
+      <assemblyIdentity name="Tracking Information System 2022" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Y2B6F9bq31KWNIgnWWowRsGTR/w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="published\.gitattributes" size="69">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wL5XpanxST5jU9uAIxlQuhSk/L4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-SR640J2R\User" issuerKeyHash="43efe5bcc46b57666dfd3df1341b2bc002a46f87" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>/nKnQxIKmrKJtrCQ0Ir6lsnfDX0=</DigestValue></Reference></SignedInfo><SignatureValue>Ta6ooQm1I2w31ZahFrtsFZrw2TQfm1BN2cb4yp/8SpzJ562dZgLWVfd7GhL4mMKZTPIFL9M+4x8TmS2c4xhq1fYe43iAN8j96uqQmnbVq5ABv/LQjGxs1oRmgUf3YX9Ygy4eJhiEO/YsyFF+4SVfd/v+E2Do61dQAESbveAfJ94=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>49GIpdfknNBdsokgyVFhO39S4OfIV94W+iML6RjVfoaY3iJP5MuY5q1cJgK8EBGrABOeKYGL5C+96zA5qMqldMyyVHDrLcPRfZnCQe4Z2r14WUZtdQDT2zkzF6xildivW6BxhbwGn0FVU8snUon7mUoV13rnyKGXgb5M///+/7U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7d0ddfc996fa8ad090b0b689b29a0a1243a772fe" Description="" Url=""><as:assemblyIdentity name="Tracking Information System 2022.exe" version="1.0.0.3" publicKeyToken="17660e3c827f293b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-SR640J2R\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>i3bLtXu1C5GlhACih1/423bbV0c=</DigestValue></Reference></SignedInfo><SignatureValue>fgUNttK348tgJmsFpf4b3YsntuLzyQH8qIjFOFbhwW3FVo4Yl549Nr9ptg+szUeUIgwglGpaFkCLymowMD5jv6Mh9wPzaBNz4rvuDdGJrOVmqGmBdfVIpKrmIxfi4lhMqFiOFccX2OqBYm2yi0Buhrl9RMUfc00P7AlOV3ae8SI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>49GIpdfknNBdsokgyVFhO39S4OfIV94W+iML6RjVfoaY3iJP5MuY5q1cJgK8EBGrABOeKYGL5C+96zA5qMqldMyyVHDrLcPRfZnCQe4Z2r14WUZtdQDT2zkzF6xildivW6BxhbwGn0FVU8snUon7mUoV13rnyKGXgb5M///+/7U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQF/smCn+62KpN9XiwhV0npjANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigATABBAFAAVABPAFAALQBTAFIANgA0ADAASgAyAFIAXABVAHMAZQByMB4XDTIyMTAwNDAzNDExMloXDTIzMTAwNDA5NDExMlowMzExMC8GA1UEAx4oAEwAQQBQAFQATwBQAC0AUwBSADYANAAwAEoAMgBSAFwAVQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA49GIpdfknNBdsokgyVFhO39S4OfIV94W+iML6RjVfoaY3iJP5MuY5q1cJgK8EBGrABOeKYGL5C+96zA5qMqldMyyVHDrLcPRfZnCQe4Z2r14WUZtdQDT2zkzF6xildivW6BxhbwGn0FVU8snUon7mUoV13rnyKGXgb5M///+/7UCAwEAATANBgkqhkiG9w0BAQUFAAOBgQC5A5d6IpgBtNnpokSxwlLpaz65VsQ6FFzTPM+tcBjvr3F2WaJeiE5WZpYfzTGKmOluuu5e3Hs5++Up3ac9FbHUY8bYz48AxHq7Z81SGEfTjJOR8lide5nFaIEnjaGyCbP/67VdOhELsLsffDTubHW+rHcuibuDhUxRZ64Vwv6R1w==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
