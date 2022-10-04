@@ -74,5 +74,39 @@ Module Navigation_Panel_Module
 
         End With
     End Sub
+    Public Sub Brand_View()
+        Button_Color_Reset()
+        Main.Button3.ForeColor = background_color_active
+        With BrandFormView
+            .DataGridView1.Rows.Clear()
+            .TopLevel = False
+            Main.Panel2.Controls.Add(BrandFormView)
+            .BringToFront()
+            .Show()
+            .MetroTextBox1.Text = String.Empty
+            .loadrecord()
+            .DataGridView1.Refresh()
+
+        End With
+    End Sub
+
+
+    Public Sub Customer_Detail_Tab1_View()
+        With CustomerFormDetailView_Tab1
+            .TopLevel = False
+            CustomerFormDetailView.TabPage1.Controls.Add(CustomerFormDetailView_Tab1)
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
+
+    Public Sub Customer_Detail_Tab2_View()
+        With CustomerFormDetailView_Tab2
+            .TopLevel = False
+            CustomerFormDetailView.TabPage2.Controls.Add(CustomerFormDetailView_Tab2)
+            .BringToFront()
+            .Show()
+        End With
+    End Sub
 
 End Module

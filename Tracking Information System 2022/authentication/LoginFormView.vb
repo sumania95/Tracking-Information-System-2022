@@ -13,9 +13,7 @@
             If dr.Read = True Then
                 found = True
                 username = dr.Item("username").ToString
-                'user_id = dr.Item("id").ToString
-                'user_password = dr.Item("password").ToString
-                'user_type = dr.Item("type").ToString
+                uid_user = dr.Item("id").ToString
             End If
             dr.Close()
             cn.Close()

@@ -27,7 +27,7 @@
                 i += 1
                 Dim ddate As Date
                 ddate = dr.Item("date_created").ToString
-                DataGridView1.Rows.Add(i, dr.Item("id").ToString, dr.Item("name").ToString.ToUpper, dr.Item("address").ToString.ToUpper, dr.Item("contact").ToString, "Update", "Remove")
+                DataGridView1.Rows.Add(i, dr.Item("id").ToString, dr.Item("name").ToString.ToUpper, dr.Item("address").ToString.ToUpper, dr.Item("contact").ToString, "UPDATE", "VIEW INFO")
             End While
             dr.Close()
             cn.Close()
@@ -42,11 +42,48 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         With CustomerFormCreate
+            .Text = "NEW CUSTOMER"
+            .Button2.Text = "SAVE"
             .TextBox1.Clear()
             .TextBox2.Clear()
             .TextBox3.Clear()
             .TextBox1.Focus()
             .ShowDialog()
         End With
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        Dim colName As String = DataGridView1.Columns(e.ColumnIndex).Name
+        If colName = "Column1" Then
+            With CustomerFormCreate
+                .Text = "UPDATE CUSTOMER"
+                uid = DataGridView1.CurrentRow.Cells(1).Value.ToString
+                .Customer_AutoFill(uid)
+                .ShowDialog()
+            End With
+        ElseIf colName = "Column3" Then
+            With CustomerFormDetailView
+                uid = DataGridView1.CurrentRow.Cells(1).Value.ToString
+                uid_customer = DataGridView1.CurrentRow.Cells(1).Value.ToString
+
+                .Size = New Point(Convert.ToInt32(ClientSize.Width - 0), Convert.ToInt32(ClientSize.Height - 0))
+                .StartPosition = FormStartPosition.CenterScreen
+                .Text = "CUSTOMER SUMMARY INFORMATION"
+                .Customer_AutoFill(uid_customer)
+                .ShowDialog()
+            End With
+        End If
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub MetroTextBox1_Click(sender As Object, e As EventArgs) Handles MetroTextBox1.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class

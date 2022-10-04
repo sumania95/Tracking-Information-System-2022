@@ -148,7 +148,7 @@ Partial Class Main
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(335, 55)
         Me.Button3.TabIndex = 22
-        Me.Button3.Text = "   UNIT"
+        Me.Button3.Text = "   BRAND"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button3.UseVisualStyleBackColor = True

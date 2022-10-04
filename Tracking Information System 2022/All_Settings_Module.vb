@@ -1,6 +1,9 @@
 ﻿Module All_Settings_Module
     Public pagination_counter As Integer = 0
     Public title_app = "MANAGEMENT & INVENTORY SYSTEM 2022"
+    Public uid As Integer
+    Public uid_customer As Integer
+    Public uid_user As Integer
 
     Function UppercaseFirstLetter(ByVal val As String) As String
         ' Test for nothing or empty.
