@@ -4,7 +4,7 @@
             Dim found As Boolean = False
             Dim username As String = ""
             cn.Open()
-            cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM login WHERE username = @username AND password = @password;", cn)
+            cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM user WHERE username = @username AND password = @password;", cn)
 
             cm.Parameters.AddWithValue("@username", txUser.Text)
             cm.Parameters.AddWithValue("@password", txPass.Text)
@@ -14,11 +14,13 @@
                 found = True
                 username = dr.Item("username").ToString
                 uid_user = dr.Item("id").ToString
+                user_name = dr.Item("name").ToString
+                user_branch_id = dr.Item("branch_id").ToString
             End If
             dr.Close()
             cn.Close()
             If found = True Then
-                MsgBox("Access Granted. Welcome : " & UppercaseFirstLetter(username.ToString), vbInformation, title_app)
+                MsgBox("Access Granted. Welcome : " & UppercaseFirstLetter(user_name.ToString), vbInformation, title_app)
                 Main_View()
                 Dashboard_View()
             Else

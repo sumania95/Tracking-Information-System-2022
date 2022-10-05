@@ -7,11 +7,12 @@
             End If
             If (MsgBox("Are you sure you want to save this record?", vbYesNo + vbQuestion, title_app) = vbYes) Then
                 cn.Open()
-                cm = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO customer (name,address,contact,user_id,date_created) VALUES (@name,@address,@contact,@user_id,@date_created);", cn)
+                cm = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO customer (name,address,contact,user_id,date_created,branch_id) VALUES (@name,@address,@contact,@user_id,@date_created,@branch_id);", cn)
                 cm.Parameters.AddWithValue("@name", TextBox1.Text)
                 cm.Parameters.AddWithValue("@address", TextBox2.Text)
                 cm.Parameters.AddWithValue("@contact", TextBox3.Text)
                 cm.Parameters.AddWithValue("@user_id", 1)
+                cm.Parameters.AddWithValue("@branch_id", user_branch_id)
                 cm.Parameters.AddWithValue("@date_created", DateAndTime.Now.ToString("yyyy-MM-dd hh:mm:ss"))
                 cm.ExecuteNonQuery()
                 cn.Close()

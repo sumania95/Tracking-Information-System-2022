@@ -30,7 +30,7 @@
             Dim i As Integer = 0
             DataGridView1.Rows.Clear()
             cn.Open()
-            cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM unit_owned LEFT JOIN brand ON unit_owned.brand_id = brand.id LEFT JOIN login ON unit_owned.user_id = login.id WHERE serial_no like @serial_no AND customer_id = @customer_id ORDER BY date_delivered;", cn)
+            cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM unit_owned LEFT JOIN brand ON unit_owned.brand_id = brand.id LEFT JOIN user ON unit_owned.user_id = user.id WHERE serial_no like @serial_no AND customer_id = @customer_id ORDER BY date_delivered;", cn)
             cm.Parameters.AddWithValue("@serial_no", "%" + MetroTextBox1.Text + "%")
             cm.Parameters.AddWithValue("@customer_id", uid_customer)
             dr = cm.ExecuteReader

@@ -8,8 +8,9 @@
     Public Sub loadrecord()
         Try
             cn.Open()
-            cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT Count(customer.id) AS counter_table FROM customer WHERE name like @name;", cn)
+            cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT Count(customer.id) AS counter_table FROM customer WHERE name like @name AND branch_id=@branch_id;", cn)
             cm.Parameters.AddWithValue("@name", "%" + MetroTextBox1.Text + "%")
+            cm.Parameters.AddWithValue("@branch_id", user_branch_id)
             dr = cm.ExecuteReader
             While dr.Read
                 pagination_counter = dr.Item("counter_table").ToString
@@ -20,8 +21,10 @@
             Dim i As Integer = 0
             DataGridView1.Rows.Clear()
             cn.Open()
-            cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM customer WHERE name like @name ORDER BY name;", cn)
+            cm = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM customer WHERE name like @name AND branch_id=@branch_id ORDER BY name;", cn)
             cm.Parameters.AddWithValue("@name", "%" + MetroTextBox1.Text + "%")
+            cm.Parameters.AddWithValue("@branch_id", user_branch_id)
+
             dr = cm.ExecuteReader
             While dr.Read
                 i += 1
